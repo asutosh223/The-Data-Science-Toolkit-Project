@@ -145,7 +145,7 @@ Juypter is ready for use & we can start R programming. Happy Programming :smile:
 Amazon FREE USAGE TIER: New Customers get free usage tier for first 12 months
 
 Amazon EC2 Pricing for On-Demand Instance for Ubuntu 
-
+![image 16](https://user-images.githubusercontent.com/33742913/34904159-b994027a-f7f4-11e7-8281-1574c94adc56.png)
 
 (http://calculator.s3.amazonaws.com/index.html)
 
@@ -154,6 +154,7 @@ Amazon EC2 Pricing for On-Demand Instance for Ubuntu
 
  
 Cost for 3 Instances, 30GB Storage, 1GiB per Month as per AWS for Free Tier user
+![image 15](https://user-images.githubusercontent.com/33742913/34904158-b97899b8-f7f4-11e7-994e-7a1416e3e0cd.png)
 
 
 **Cost for 3 Month = 16.80*3 = $50.4**
