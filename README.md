@@ -10,11 +10,20 @@
 In comand line use below command
 ```ssh-keygen```
 
-<Image 2>
+![image 2](https://user-images.githubusercontent.com/33742913/34904055-769744a2-f7f2-11e7-92ca-bb471790a5a1.png)
+
+
+
+
+
+
+
+
+
 
 This will create two files id_rsa & id_rsa.pub
  
- <image 3>
+ ![image 3](https://user-images.githubusercontent.com/33742913/34904056-76b0aabe-f7f2-11e7-8939-d37479d8d536.png)
  
 Get the content of id_rsa.pub (this will be required while we set up AWS key pair)
 To get content of id_rsa.pub use below command
@@ -32,7 +41,7 @@ Before creating a EC2 instance, we need to create Key pairs & Security Groups. F
 Create Key Pairs, provide a key pair name. 
 Import Key pair (copy paste the content of id_rsa.pub)
  
- <Image 4>
+ ![image 4](https://user-images.githubusercontent.com/33742913/34904057-76fa3a12-f7f2-11e7-9b75-9ccb1401abd6.png)
  
 **Security Groups**
 
@@ -40,7 +49,7 @@ Create new Security Group & not use default security group. Add rule
 Add SSH to connect our system
 Add HTTP to connect to internet. Source is selected as anywhere
 
-<Image 5>
+![image 5](https://user-images.githubusercontent.com/33742913/34904058-772a64da-f7f2-11e7-9d33-0ef9f617ba1b.png)
  
 **Starting a server on AWS**—called an **EC2 instance**. The first step is to launch EC2.
 
@@ -88,14 +97,17 @@ Once done review the selected option & launch your instance. Instance status sho
 Take the public IP address IPv4 from the instance created in AWS. Go to bash shell & type below command.
 
 ```ssh ubuntu@54.214.205.229```
- 
+![image 6](https://user-images.githubusercontent.com/33742913/34904059-7757a77e-f7f2-11e7-8d17-3988fc20b2a5.png)
+
 Use the below command curl to download docker by piping it to shell
 
 ```curl -sSL https://get.docker.com | sh```
 
 Once download is complete use sudo command mentioned below
+![image 7](https://user-images.githubusercontent.com/33742913/34904060-77728c38-f7f2-11e7-9930-60eb16964505.png)
  
 Logout to make docker in effect. Log back in & type ```docker -v``` to check the version of doctor installed
+![image 8](https://user-images.githubusercontent.com/33742913/34904061-77923e2a-f7f2-11e7-9995-1f4b4e51c075.png)
  
 Docker installation is complete.
 
@@ -108,16 +120,19 @@ Now Pull jupyter image in docker using below command
 ```docker pull jupyter/datascience-notebook```
 
 To verify jupyter image is available type docker images 
- 
+![image 9](https://user-images.githubusercontent.com/33742913/34904063-77b1790c-f7f2-11e7-8b22-66692e7dea78.png)
+![image 10](https://user-images.githubusercontent.com/33742913/34904064-77eac554-f7f2-11e7-9645-ae8069c7511d.png)
  
 Run the Jupyter container using below command
 
 ```docker run -v /home/ubuntu:/home/jovyan -p 8888:8888 -d jupyter/datascience-notebook```
+![image 11](https://user-images.githubusercontent.com/33742913/34904065-780a6828-f7f2-11e7-85d2-29f284d426d6.png)
+
  
 ```docker exec 9c5c jupyter notebook list```
 
 Go to internet browser & provide the IPv4 public IP & get token from bash using above command 
- 
+ ![image 12](https://user-images.githubusercontent.com/33742913/34904066-782c8ef8-f7f2-11e7-8efd-f33fac2347f9.png)
 
 Juypter is ready for use & we can start R programming. Happy Programming :smile: !!:thumbsup:
 
@@ -133,7 +148,10 @@ Amazon EC2 Pricing for On-Demand Instance for Ubuntu
 
 
 (http://calculator.s3.amazonaws.com/index.html)
- 
+
+![image 13](https://user-images.githubusercontent.com/33742913/34904067-784aae6a-f7f2-11e7-9569-841ba95b7d82.png)
+![image 14](https://user-images.githubusercontent.com/33742913/34904068-78697336-f7f2-11e7-89a6-8cb8be97f4eb.png)
+
  
 Cost for 3 Instances, 30GB Storage, 1GiB per Month as per AWS for Free Tier user
 
