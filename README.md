@@ -13,19 +13,11 @@ In comand line use below command
 ![image 2](https://user-images.githubusercontent.com/33742913/34904055-769744a2-f7f2-11e7-92ca-bb471790a5a1.png)
 
 
-
-
-
-
-
-
-
-
 This will create two files id_rsa & id_rsa.pub
  
  ![image 3](https://user-images.githubusercontent.com/33742913/34904056-76b0aabe-f7f2-11e7-8939-d37479d8d536.png)
  
-Get the content of id_rsa.pub (this will be required while we set up AWS key pair)
+Get the content of id_rsa.pub (*this will be required while we set up AWS key pair*)
 To get content of id_rsa.pub use below command
 ```
 less ~/.ssh/id_rsa.pub 
@@ -39,7 +31,7 @@ Before creating a EC2 instance, we need to create Key pairs & Security Groups. F
 **Key Pairs**
 
 Create Key Pairs, provide a key pair name. 
-Import Key pair (copy paste the content of id_rsa.pub)
+Import Key pair (*copy paste the content of id_rsa.pub*)
  
  ![image 4](https://user-images.githubusercontent.com/33742913/34904057-76fa3a12-f7f2-11e7-9b75-9ccb1401abd6.png)
  
@@ -73,15 +65,15 @@ We selected the default & cost-effective option of T2micro with 1 GiB memory. In
 
 **Configuring Instance**
 
-Select the default option (change based on your need). In our case 1 instance was selected.
+Select the default option (*change based on your need*). In our case 1 instance was selected.
 
 **Add Storage**
 
-30GB free storage space is available for the AMI selected with an IOPS of 100/3000 (low but will do our job)
+30GB free storage space is available for the AMI selected with an IOPS of 100/3000 (*low but will do our job*)
 
 **Add Tags**
 
-No tags selected. (Default)
+No tags selected. (*Default*)
 
 A tag consists of a case-sensitive key-value pair. For example, you could define a tag with key = Name and value = Webserver. A copy of a tag can be applied to volumes, instances or both.
 Tags will be applied to all instances and volumes
@@ -142,7 +134,7 @@ Juypter is ready for use & we can start R programming. Happy Programming :smile:
 - Docker – Free
 - Juypter Notebook - Free
 
-Amazon FREE USAGE TIER: New Customers get free usage tier for first 12 months
+Amazon FREE USAGE TIER: *New Customers get free usage tier for first 12 months*
 
 Amazon EC2 Pricing for On-Demand Instance for Ubuntu 
 ![image 16](https://user-images.githubusercontent.com/33742913/34904159-b994027a-f7f4-11e7-8281-1574c94adc56.png)
@@ -159,6 +151,6 @@ Cost for 3 Instances, 30GB Storage, 1GiB per Month as per AWS for Free Tier user
 
 **Cost for 3 Month = 16.80*3 = $50.4**
 
-**Note**: Elastic IP, Data Transfer & Elastic Load Balancing is not taken into account. Price may vary for existing non FREE USAGE TIER customer
+**Note**: *Elastic IP, Data Transfer & Elastic Load Balancing is not taken into account. Price may vary for existing non FREE USAGE TIER customer*
 
 
