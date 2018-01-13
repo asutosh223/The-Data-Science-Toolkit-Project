@@ -1,4 +1,4 @@
-# The-Data-Science-Toolkit-Project
+# The Data Science Toolkit Project
 ## Pre-requisite
 1.	AWS account
 2.	Git Bash 
@@ -6,7 +6,7 @@
 ## System Architecture
 ![image 1](https://user-images.githubusercontent.com/33742913/34903727-9b3a8a04-f7ec-11e7-94cf-2ab3b6cfe59d.png)
 ## Solution
-#### 1.	Go to Bash & Generate your SSH key
+### 1.	Go to Bash & Generate your SSH key
 In comand line use below command
 ```ssh-keygen```
 
@@ -24,7 +24,7 @@ less ~/.ssh/id_rsa.pub
 or 
 cat ~/.ssh/id_rsa.pub
 ```
-#### 2.	Go to AWS account & create your EC2 instance (AWS OS)
+### 2.	Go to AWS account & create your EC2 instance (AWS OS)
 Set your region in AWS (I set it up as Oregan) Select the closet location.
 Before creating a EC2 instance, we need to create Key pairs & Security Groups. Follow below steps
 
@@ -84,7 +84,7 @@ In the EC2 launch wizard, you define a security group, which acts as a virtual f
 
 Once done review the selected option & launch your instance. Instance status should be running & status checks 2/2.
 
-#### 3.	Dockers Installation
+### 3.	Dockers Installation
 
 Take the public IP address IPv4 from the instance created in AWS. Go to bash shell & type below command.
 
@@ -103,7 +103,7 @@ Logout to make docker in effect. Log back in & type ```docker -v``` to check the
  
 Docker installation is complete.
 
-#### 4.	Launch Juypter notebook
+### 4.	Launch Jupyter notebook
 
 Connect to ubuntu server ```ssh ubuntu@54.201.102.48```
 
@@ -126,13 +126,13 @@ Run the Jupyter container using below command
 Go to internet browser & provide the IPv4 public IP & get token from bash using above command 
  ![image 12](https://user-images.githubusercontent.com/33742913/34904066-782c8ef8-f7f2-11e7-8efd-f33fac2347f9.png)
 
-Juypter is ready for use & we can start R programming. Happy Programming :smile: !!:thumbsup:
+Jupyter is ready for use & we can start R programming. Happy Programming :smile: !!:thumbsup:
 
 ## Cost Analysis
 
 - Amazon EC2 – Cost Involved
 - Docker – Free
-- Juypter Notebook - Free
+- Jupyter Notebook - Free
 
 Amazon FREE USAGE TIER: *New Customers get free usage tier for first 12 months*
 
